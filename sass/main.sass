@@ -5,6 +5,7 @@ html,
 body
 	margin: 0
 	padding: 0
+	width: 1920px
 	font-family: 'Montserrat', sans-serif
 
 h1,
@@ -56,3 +57,70 @@ p
 		& > .subtext
 			font-size: 22px
 			color: $white
+
+// BELOW THE FOLD STYLES
+.container
+	width: 100%
+
+.spacer
+	height: 70px
+	background: $red
+
+	&.clear
+		background: none
+
+.row
+	display: flex
+	flex-direction: row
+	width: 100%
+
+.col
+	display: flex
+	flex-direction: column
+	flex-basis: 100%
+	flex: 1
+
+	& > .collage-img
+		margin: 5px
+
+		&.small
+			width: 225px
+
+		&.ml-0
+			margin-left: 0px
+
+		&.mt-10
+			margin-top: 10px
+
+		&.mb-10
+			margin-bottom: 10px
+
+	& p
+		margin: 8px 0
+		width: 725px
+		font-size: 14px
+
+		&.key
+			font-weight: 900
+			color: $red
+
+.video
+	position: absolute
+	top: 86.5vh
+	left: 581px
+	box-shadow: 0px 0px 25px $black
+
+h3
+	line-height: 45px
+	font-size: 50px
+	text-transform: uppercase
+	color: $red
+
+	& small
+		font-size: calc(100% - 5px);
+		color: $black
+
+hr
+	margin: 25px 0
+	width: 99%
+	border: 4px solid $black
