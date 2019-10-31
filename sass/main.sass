@@ -1,10 +1,58 @@
 @import 'variables'
 
-
-// Delete Me and Good Luck!
+// REBOOT
+html,
 body
+	margin: 0
+	padding: 0
+	font-family: 'Montserrat', sans-serif
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+	margin: 0
+	padding: 0
+
+// HERO PANEL
+.hero
+	display: flex
+	align-items: center
+	justify-content: center
 	height: 100vh
-	display: flex 
-	align-items: center 
-	justify-content: center 
-	text-align: center
+	background-repeat: no-repeat
+	background-size: cover
+
+	&.hero1
+		background-image: url("../assets/HERO 1.jpg")
+
+	&.hero2
+		background-image: url("../assets/HERO 2.jpg")
+
+	&.hero3
+		background-image: url("../assets/HERO 3.jpg")
+
+	& > .hero-text
+		width: 920px
+		text-align: center
+
+		& h1
+			font-size: 120px
+			font-weight: 900
+			letter-spacing: 0.5px
+			text-transform: uppercase
+			color: $red
+
+		& h2
+			margin-top: -42px
+			font-size: 72px
+			font-weight: 900
+			text-transform: uppercase
+			color: $white
+
+		& > .subtext
+			font-size: 22px
+			color: $white
