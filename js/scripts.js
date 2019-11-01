@@ -1,5 +1,5 @@
 // This function will generate a random integer between 0 and 3
-//   and then assign the class associated with that number
+// and then assign the class associated with that number
 function getRandomHeroImage() {
 	var heroClasses = ["hero1", "hero2", "hero3"];
 
@@ -18,8 +18,6 @@ function runOnScroll() {
 		document.getElementById("img5").classList.add("animated", "fadeInRight", "delay-1s");
 		document.getElementById("body-copy").classList.add("animated", "fadeInRight", "delay-2s");
 	}
-
-	//window.removeEventListener("scroll", runOnScroll);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
